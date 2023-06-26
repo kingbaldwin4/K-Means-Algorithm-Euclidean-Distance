@@ -211,8 +211,7 @@ if choose == 1:
         cv2.destroyAllWindows()
         exit()
 elif choose == 2:
-        cv2.imshow('Kullanilan Goruntu',img)
-        #img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+        img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
         kmeans_rgb_euclidean(img,K,iteration)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
